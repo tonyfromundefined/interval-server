@@ -1,4 +1,4 @@
-FROM node:18-alpine
-RUN npm i --save-prod -g @interval/server
+FROM docker.io/alexarena/interval-server:latest
+
 EXPOSE 3000
-CMD interval-server db-init;interval-server start
+CMD interval-server start
